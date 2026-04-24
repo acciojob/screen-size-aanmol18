@@ -1,9 +1,7 @@
-//your JS code here. If required.
-const sizeDisplay = document.querySelector("#sizeInfo h1");
+const w = document.querySelector('.w');
+const h = document.querySelector('.h');
 
-function updateSize() {
-    sizeDisplay.textContent = `Width: ${window.innerWidth} and Height: ${window.innerHeight}`;
-}
-updateSize();
-
-window.addEventListener("resize", updateSize);
+window.addEventListener('resize', ()=>{
+	w.textContent = window.innerWidth;
+	h.textContent = window.innerHeight;
+})
